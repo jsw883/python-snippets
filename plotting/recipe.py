@@ -1,9 +1,8 @@
-# Author: James Williams
-#   Simple recipe for matplotlib single figure which is saved to disk as png.
+# basic recipe for matplotlib that saves the plot as a png
 
+# pyplotpractical is module in local directory
 import numpy as np
 from matplotlib import pyplot as pp
-from matplotlib import rc
 from pyplotpractical import io
 
 # data for plotting

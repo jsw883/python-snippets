@@ -3,8 +3,9 @@ from datetime import datetime
 from matplotlib import pyplot as pp
 
 def savefig(pathname, format='png', timestamp=True, verbose=True, **kwargs):
-    """Wrapper for pyplot.savefig that does some idiot proofing and adds some
-    practical features, such as automatically creating the directory if it is
+    """
+    Wrapper for pyplot.savefig that does some idiot proofing and adds some
+    practical features such as automatically creating a directory if it is
     missing, appending a timestamp, and being verbose about everything.
  
     Parameters:
@@ -12,7 +13,8 @@ def savefig(pathname, format='png', timestamp=True, verbose=True, **kwargs):
       format      string (default is png when extension is missing)
       timestamp   boolean (default is to prepend a timestamp to filename)
       verbose     boolean (default is verbose)
-      kwargs      dict (passed to pyplot.savefig)"""
+      kwargs      dict (passed to pyplot.savefig)
+    """
     
     if verbose:
         print "savefig: ",
@@ -47,4 +49,4 @@ def savefig(pathname, format='png', timestamp=True, verbose=True, **kwargs):
         print path
         if dirflag:
             print "  created missing directory"
-        print "  appended timestamp"
+        print "  appended timestamp " + stamp
