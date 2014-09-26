@@ -6,7 +6,7 @@ from matplotlib import pyplot as pp
 from pyplotpractical import io
 from pyplotpractical import figtool
 
-io.printtolog('normal',timestamp=False)
+# io.printtolog('normal',timestamp=False)
 
 # parameters and data for plotting
 N = 1000
@@ -17,8 +17,8 @@ y = np.random.normal(0,1,N)
 # quality and appearance settings
 res = (15,10)
 dpi = 72
-smf = {'family':'Roboto','style':'normal','weight':'medium','size':18}
-lgf = {'family':'Roboto','style':'normal','weight':'medium','size':18}
+smf = {'family':'sans-serif','style':'normal','weight':'medium','size':18}
+lgf = {'family':'sans-serif','style':'normal','weight':'medium','size':18}
 
 pp.rc('font', **smf)
 pp.rc('lines',lw=2)

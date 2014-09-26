@@ -49,3 +49,6 @@ __pycache__
 # SVN / git control
 .svn
 .git
+
+# Deprecated
+*deprecated*
